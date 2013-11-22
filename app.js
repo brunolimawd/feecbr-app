@@ -1,6 +1,6 @@
 var express = require('express'),
-    app = express(),
-    exphbs  = require('express3-handlebars');
+    exphbs = require('express3-handlebars'),
+    app = express();
 
 app.engine('handlebars', exphbs({ defaultLayout: 'main' }));
 app.set('view engine', 'handlebars');
@@ -13,9 +13,9 @@ app.get('/photos', function (request, response, next) {
     response.render('photos', {
         count: 3,
         photos: [{
-            "from": "brasil images",
-            "title": "photo one",
-            "src": "http://www.exit-brasil.org/foto/logo.jpg",
+            "from": "FEEC images",
+            "title": "Workshop",
+            "src": "https://fbcdn-sphotos-h-a.akamaihd.net/hphotos-ak-frc3/q75/s720x720/1472977_633433723380215_434696798_n.jpg",
             "link": "http://feecbr.com.br/pt"
         }, {
             "from": "yahoo images",
